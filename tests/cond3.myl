@@ -1,0 +1,19 @@
+fn check(name) = {
+  if name == "admin" || name == "root" {
+    "privileged"
+  } else {
+    "regular"
+  }
+}
+
+fn main() = {
+  print(check("admin"))
+  print(check("user"))
+  let a = true
+  let b = false
+  if a && !b {
+    print("ok")
+  } else {
+    print("fail")
+  }
+}

@@ -1,0 +1,10 @@
+fn main() = {
+  let xs = [3, 1, 2, 5, 4]
+  for x in xs.sort() {
+    print(x)
+  }
+  let names = ["charlie", "alice", "bob"]
+  for n in names.sort() {
+    print(n)
+  }
+}

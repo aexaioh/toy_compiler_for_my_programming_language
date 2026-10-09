@@ -1,0 +1,16 @@
+fn main() = {
+  let hosts = ["web1", "web2", "db1", "web3"]
+  let target = "db1"
+  let found = ""
+  for h in hosts {
+    if h == target {
+      found = h
+      break
+    }
+  }
+  if found == "" {
+    print("not found")
+  } else {
+    print("found: {found}")
+  }
+}

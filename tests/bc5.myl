@@ -1,0 +1,10 @@
+fn main() = {
+  for i in [1, 2, 3] {
+    for j in [10, 20, 30] {
+      if j == 20 {
+        break
+      }
+      print("{i}-{j}")
+    }
+  }
+}

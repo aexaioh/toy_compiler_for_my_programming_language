@@ -1,0 +1,10 @@
+fn parse_positive(x) = {
+  Ok(x + 100)
+}
+
+fn main() = {
+  let a = parse_positive(1)?
+  let b = parse_positive(2)?
+  print(a + b)
+  Ok(())
+}

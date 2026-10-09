@@ -1,0 +1,7 @@
+fn main() = {
+  let xs = ["hello", "world", "foo"]
+  let u = xs.map(s => s.upper())
+  print(u.join(" | "))
+  let f = xs.filter(s => s.contains("o"))
+  print(f.join(","))
+}

@@ -1,0 +1,18 @@
+fn lookup(m, k) = {
+  match m.get(k) {
+    Some(v) => Ok(v)
+    None => Err("not found")
+  }
+}
+
+fn main() = {
+  let m = map().set("a", 100).set("b", 200)
+  match lookup(m, "a") {
+    Ok(v) => print("found: {v}")
+    Err(e) => print(e)
+  }
+  match lookup(m, "z") {
+    Ok(v) => print("found: {v}")
+    Err(e) => print(e)
+  }
+}

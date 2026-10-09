@@ -1,0 +1,20 @@
+fn main() = {
+  let m0 = map()
+  let m1 = m0.set("x", 1).set("y", 2).set("z", 3)
+  for k in m1.keys() {
+    print(k)
+  }
+  print("---")
+  for v in m1.values() {
+    print(v)
+  }
+  print("---")
+  for item in m1.items() {
+    print(item)
+  }
+  print("---")
+  let m2 = m1.delete("y")
+  print(m2.len())
+  print(m2.has("y"))
+  print(m1.len())
+}

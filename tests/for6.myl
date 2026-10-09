@@ -1,0 +1,7 @@
+fn main() = {
+  print("42".to_int().or(-1))
+  print("  -7  ".to_int().or(-1))
+  print("abc".to_int().or(-1))
+  print("".to_int().or(-1))
+  print("3.14".to_int().or(-1))
+}

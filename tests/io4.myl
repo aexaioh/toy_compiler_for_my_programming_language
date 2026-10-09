@@ -1,0 +1,8 @@
+fn main() = {
+  let a = args()
+  print(a.len())
+  match getenv("HOME") {
+    Some(h) => print(h)
+    None => print("no HOME")
+  }
+}

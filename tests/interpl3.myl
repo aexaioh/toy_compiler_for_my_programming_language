@@ -1,0 +1,7 @@
+fn greet(who) = {
+  "hi, {who}"
+}
+
+fn main() = {
+  print("{greet("bob")}!")
+}

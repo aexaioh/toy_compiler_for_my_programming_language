@@ -1,0 +1,5 @@
+fn main() = {
+  print("=".repeat(20))
+  print("hello")
+  print("=".repeat(20))
+}

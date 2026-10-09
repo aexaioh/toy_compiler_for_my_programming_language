@@ -1,0 +1,6 @@
+fn main() = {
+  print("hello123".matches("[0-9]+"))
+  print("hello".matches("[0-9]+"))
+  print("192.168.1.1".matches("^[0-9.]+$"))
+  print("abc".matches("^[[:alpha:]]+$"))
+}

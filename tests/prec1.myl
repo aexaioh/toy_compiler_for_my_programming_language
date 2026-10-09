@@ -1,0 +1,10 @@
+fn f() = {
+  if true {
+    print("yes")
+  }
+  -42
+}
+
+fn main() = {
+  print(f())
+}

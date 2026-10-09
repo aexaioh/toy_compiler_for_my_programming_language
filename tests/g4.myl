@@ -1,0 +1,9 @@
+fn main() = {
+  let files = ["a.txt", "b.log", "c.txt", "d.log", "e.md"]
+  let by_ext = files.group_by(f => f.split(".").last().or("?"))
+  print(by_ext.len())
+  for k in by_ext.keys() {
+    let lst = by_ext.get(k).or(["?"])
+    print("{k}: {lst.join(", ")}")
+  }
+}

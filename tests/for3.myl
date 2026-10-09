@@ -1,0 +1,7 @@
+fn main() = {
+  let xs = [1, 2, 3]
+  for x in xs {
+    let y = x * x
+    print(y)
+  }
+}

@@ -1,0 +1,5 @@
+fn main() = {
+  let files = ["/etc/hostname", "/etc/os-release"]
+  let first = files.take(1)
+  print(first.join(" "))
+}

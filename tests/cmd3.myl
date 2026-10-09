@@ -1,0 +1,12 @@
+fn check() = {
+  let r = $(cat /nonexistent)?
+  print(r.stdout)
+  Ok(())
+}
+
+fn main() = {
+  match check() {
+    Ok(u) => print("ok")
+    Err(e) => print(e)
+  }
+}

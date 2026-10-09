@@ -1,0 +1,12 @@
+fn main() = {
+  let lines = ["# comment", "data1", "", "data2", "# another"]
+  let count = 0
+  for line in lines {
+    if line.starts_with("#") || line.len() == 0 {
+      continue
+    }
+    count = count + 1
+    print(line)
+  }
+  print("total: {count}")
+}

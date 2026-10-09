@@ -1,0 +1,5 @@
+fn main() = {
+  print("start")
+  sleep(500)
+  print("after 500ms")
+}

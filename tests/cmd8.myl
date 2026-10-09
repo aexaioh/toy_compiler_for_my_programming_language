@@ -1,0 +1,6 @@
+fn main() = {
+  let r = $(df -h /)?
+  let lines = r.stdout
+  print(lines)
+  Ok(())
+}

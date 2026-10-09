@@ -1,0 +1,19 @@
+fn parse(x) = {
+  if x < 0 {
+    return Err("negative: {x}")
+  }
+  if x > 100 {
+    return Err("too big: {x}")
+  }
+  Ok(x * 2)
+}
+
+fn main() = {
+  let a = parse(5)?
+  print("a = {a}")
+  let b = parse(50)?
+  print("b = {b}")
+  let c = parse(200)?
+  print("never reached")
+  Ok(())
+}

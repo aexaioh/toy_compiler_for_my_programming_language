@@ -1,0 +1,11 @@
+fn main() = {
+  let r = $(df -h /)?
+  let lines = r.stdout.lines()
+  for line in lines {
+    let fields = line.split(" ").filter(s => s.len() > 0)
+    if fields.len() >= 6 {
+      print("{fields.get(5).or("?").pad_left(5)}  {fields.get(0).or("?")}")
+    }
+  }
+  Ok(())
+}

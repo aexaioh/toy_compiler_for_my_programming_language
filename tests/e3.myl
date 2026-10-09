@@ -1,0 +1,5 @@
+fn main() = {
+  print(min("apple", "banana"))
+  print(max("apple", "banana"))
+  print(min("z", "a"))
+}

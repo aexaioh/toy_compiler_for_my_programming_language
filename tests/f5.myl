@@ -1,0 +1,10 @@
+fn main() = {
+  let xs = [3, 1, 2, 3, 1, 5, 2]
+  let u = xs.unique()
+  print(u.len())
+  for x in u {
+    print(x)
+  }
+  let names = ["bob", "alice", "bob", "charlie", "alice"]
+  print(names.unique().join(", "))
+}

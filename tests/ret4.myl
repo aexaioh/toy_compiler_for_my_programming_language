@@ -1,0 +1,18 @@
+fn find_pair(rows) = {
+  for row in rows {
+    if row.contains("target") {
+      for field in row.split(" ") {
+        if field == "target" {
+          return "found in row: {row}"
+        }
+      }
+    }
+  }
+  "not found"
+}
+
+fn main() = {
+  let data = ["a b c", "x y z", "q target w", "p r s"]
+  print(find_pair(data))
+  print(find_pair(["only words", "no matches"]))
+}

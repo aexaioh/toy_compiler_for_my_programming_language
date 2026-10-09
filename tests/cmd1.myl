@@ -1,0 +1,4 @@
+fn main() = {
+  let r = $(uname -s)
+  print(r.stdout.trim())
+}

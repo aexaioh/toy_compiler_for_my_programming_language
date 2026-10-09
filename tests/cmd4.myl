@@ -1,0 +1,11 @@
+fn main() = {
+  let s = "  Hello, World  "
+  print(s.trim())
+  print(s.trim().upper())
+  print(s.trim().lower())
+  print("hello".len())
+  print("hello".starts_with("he"))
+  print("hello".ends_with("lo"))
+  print("hello".contains("ell"))
+  print("hello".replace("l", "L"))
+}

@@ -1,0 +1,12 @@
+fn main() = {
+  let xs = [1, 2, 3, 4, 5]
+  print(xs.len())
+  let big = xs.filter(x => x > 2)
+  print(big.len())
+  let r = xs.reverse()
+  print(r.len())
+  let t = xs.take(2)
+  print(t.len())
+  let d = xs.drop(2)
+  print(d.len())
+}

@@ -1,0 +1,6 @@
+fn main() = {
+  match read_file("/nonexistent") {
+    Ok(c) => print(c)
+    Err(e) => print(e)
+  }
+}

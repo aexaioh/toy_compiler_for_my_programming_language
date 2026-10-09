@@ -1,0 +1,6 @@
+fn main() = {
+  let xs = ["a", "b", "c"]
+  for x in xs {
+    print(x)
+  }
+}

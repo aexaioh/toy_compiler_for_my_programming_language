@@ -1,0 +1,6 @@
+fn main() = {
+  write_file("/tmp/mlang_test.txt", "hello from mlang\n")?
+  let c = read_file("/tmp/mlang_test.txt")?
+  print(c.trim())
+  Ok(())
+}

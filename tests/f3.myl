@@ -1,0 +1,11 @@
+fn main() = {
+  let hosts = ["web1", "db1", "cache-server-01"]
+  for h in hosts {
+    print("{h.pad_right(20)} up")
+  }
+  print("---")
+  let nums = ["3", "42", "100"]
+  for n in nums {
+    print(n.pad_left(5))
+  }
+}

@@ -1,0 +1,10 @@
+fn main() = {
+  let m0 = map()
+  let m1 = m0.set("alice", 30)
+  let m2 = m1.set("bob", 25)
+  print(m2.len())
+  print(m2.get("alice").or(0))
+  print(m2.get("charlie").or(0))
+  print(m2.has("bob"))
+  print(m2.has("eve"))
+}

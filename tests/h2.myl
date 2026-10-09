@@ -1,0 +1,5 @@
+fn main() = {
+  let c0 = map()
+  let c1 = c0.set("error", 12).set("warn", 5).set("info", 47)
+  c1.each((level, n) => print(if n > 10 { "HIGH: {level} = {n}" } else { "low:  {level} = {n}" }))
+}

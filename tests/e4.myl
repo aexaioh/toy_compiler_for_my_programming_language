@@ -1,0 +1,7 @@
+fn main() = {
+  let x = 42
+  let s = "hello"
+  print(x.to_str())
+  print(s.to_str())
+  print("{x.to_str()} and {s.to_str()}")
+}

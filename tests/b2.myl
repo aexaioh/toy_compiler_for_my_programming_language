@@ -1,0 +1,5 @@
+fn main() = {
+  let t0 = now()
+  sleep(100)
+  print("slept {now() - t0} ms")
+}

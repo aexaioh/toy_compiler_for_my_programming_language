@@ -1,0 +1,11 @@
+fn pick(cond) = {
+  if cond {
+    return "yes"
+  }
+  "no"
+}
+
+fn main() = {
+  print(pick(true))
+  print(pick(false))
+}

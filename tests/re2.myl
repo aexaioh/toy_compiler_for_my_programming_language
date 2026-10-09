@@ -1,0 +1,11 @@
+fn main() = {
+  let parts = "a1b22c333".find_all("[0-9]+")
+  for p in parts {
+    print(p)
+  }
+  print("---")
+  let ips = "from 10.0.0.1 to 192.168.1.100".find_all("[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+")
+  for ip in ips {
+    print(ip)
+  }
+}

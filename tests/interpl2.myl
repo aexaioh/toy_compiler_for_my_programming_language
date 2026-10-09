@@ -1,0 +1,6 @@
+fn main() = {
+  let x = 42
+  let ok = true
+  print("x = {x}, ok = {ok}")
+  print("1 + 2 = {1 + 2}")
+}

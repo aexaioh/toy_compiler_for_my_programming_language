@@ -1,0 +1,4 @@
+fn main() = {
+  let parts = args().len()
+  print(100 / parts)
+}

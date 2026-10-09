@@ -1,0 +1,7 @@
+fn main() = {
+  let total = 100
+  let parts = 7
+  let per = total / parts
+  let rem = total % parts
+  print("{total} / {parts} = {per} остаток {rem}")
+}

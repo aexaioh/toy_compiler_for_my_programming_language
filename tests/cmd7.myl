@@ -1,0 +1,6 @@
+fn main() = {
+  let r = $(ls -la /tmp)
+  print(r.status)
+  let g = $(git status --short)
+  print(g.status)
+}

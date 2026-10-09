@@ -1,0 +1,12 @@
+fn main() = {
+  for i in [1, 2] {
+    let j = 0
+    while j < 10 {
+      if j >= i {
+        break
+      }
+      print("{i}:{j}")
+      j = j + 1
+    }
+  }
+}

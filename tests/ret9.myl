@@ -1,0 +1,20 @@
+fn outer(x) = {
+  let helper = x * 2
+  if helper > 10 {
+    return "big: {helper}"
+  }
+  inner(helper)
+}
+
+fn inner(x) = {
+  if x == 0 {
+    return "zero"
+  }
+  "small: {x}"
+}
+
+fn main() = {
+  print(outer(10))
+  print(outer(3))
+  print(outer(0))
+}

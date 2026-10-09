@@ -1,0 +1,7 @@
+fn main() = {
+  let a = ["x", "y"]
+  let b = ["z"]
+  let c = a + b
+  print(c.join(", "))
+  print((a + a).len())
+}

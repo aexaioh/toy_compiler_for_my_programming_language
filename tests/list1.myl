@@ -1,0 +1,5 @@
+fn main() = {
+  let xs = ["a", "b", "c"]
+  print(xs.len())
+  print(xs.join(", "))
+}

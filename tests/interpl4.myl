@@ -1,0 +1,3 @@
+fn main() = {
+  print("literal braces: {{x}}, value: {1 + 1}")
+}

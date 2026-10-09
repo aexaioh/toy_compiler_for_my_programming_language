@@ -1,0 +1,5 @@
+fn main() = {
+  let m0 = map()
+  let m1 = m0.set("alice", 30).set("bob", 25).set("carol", 42)
+  m1.each((name, age) => print("{name} is {age}"))
+}

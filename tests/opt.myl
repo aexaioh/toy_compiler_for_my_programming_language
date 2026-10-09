@@ -1,0 +1,10 @@
+fn get() = {
+  Some(42)
+}
+
+fn main() = {
+  match get() {
+    Some(v) => print(v)
+    None => print("nothing")
+  }
+}

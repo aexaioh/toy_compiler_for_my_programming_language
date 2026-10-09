@@ -1,0 +1,13 @@
+fn first_positive(xs) = {
+  for x in xs {
+    if x > 0 {
+      return x
+    }
+  }
+  -1
+}
+
+fn main() = {
+  print(first_positive([-3, -1, 0, 5, 7]))
+  print(first_positive([-3, -1]))
+}

@@ -1,0 +1,5 @@
+fn main() = {
+  let content = read_file("/etc/hostname")?
+  print(content.trim())
+  Ok(())
+}

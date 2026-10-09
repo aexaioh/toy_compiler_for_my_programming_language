@@ -1,0 +1,7 @@
+fn main() = {
+  let r = $(df -h /)?
+  let lines = r.stdout.lines()
+  print(lines.len())
+  print(lines.first().or("empty"))
+  Ok(())
+}

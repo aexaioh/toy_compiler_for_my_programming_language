@@ -1,0 +1,7 @@
+fn main() = {
+  let empty = []
+  print(empty.len())
+  let xs = ["a", "bb", "ccc"]
+  let lens = xs.map(s => s.len())
+  print(lens.len())
+}

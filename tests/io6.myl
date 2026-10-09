@@ -1,0 +1,13 @@
+fn check(x) = {
+  if x < 0 {
+    print("negative, exiting")
+    exit(2)
+  }
+  print("ok")
+}
+
+fn main() = {
+  check(5)
+  check(-1)
+  print("never reached")
+}

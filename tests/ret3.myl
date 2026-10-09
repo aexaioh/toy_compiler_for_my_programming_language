@@ -1,0 +1,16 @@
+fn find_divisor(n, start) = {
+  let i = start
+  while i * i <= n {
+    if n % i == 0 {
+      return i
+    }
+    i = i + 1
+  }
+  -1
+}
+
+fn main() = {
+  print(find_divisor(35, 2))
+  print(find_divisor(13, 2))
+  print(find_divisor(49, 2))
+}

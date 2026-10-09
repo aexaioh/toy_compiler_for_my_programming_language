@@ -1,0 +1,15 @@
+fn process(items) = {
+  let total = 0
+  for x in items {
+    if x < 0 {
+      return "aborted at {x}, total={total}"
+    }
+    total = total + x
+  }
+  "done, total={total}"
+}
+
+fn main() = {
+  print(process([1, 2, 3, 4]))
+  print(process([1, 2, -1, 4]))
+}

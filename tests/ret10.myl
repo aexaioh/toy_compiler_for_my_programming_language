@@ -1,0 +1,9 @@
+// expect_compile_error
+fn f(x) = {
+  print("computing")
+  return x
+}
+
+fn main() = {
+  print(f(5))
+}

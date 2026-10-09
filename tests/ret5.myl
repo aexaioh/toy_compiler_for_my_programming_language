@@ -1,0 +1,13 @@
+fn check(x) = {
+  if x < 0 {
+    eprint("negative value: {x}")
+    return ()
+  }
+  print("ok: {x}")
+}
+
+fn main() = {
+  check(5)
+  check(-1)
+  check(10)
+}

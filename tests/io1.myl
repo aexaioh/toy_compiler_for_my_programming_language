@@ -1,0 +1,7 @@
+fn main() = {
+  let r = $(df -h /)?
+  let lines = r.stdout.split("\n")
+  print(lines.len())
+  print(lines.take(1).join(""))
+  Ok(())
+}

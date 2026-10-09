@@ -1,0 +1,7 @@
+fn main() = {
+  let nums = [3, -7, 2, -1, 5]
+  let abs_nums = nums.map(x => abs(x))
+  for n in abs_nums {
+    print(n)
+  }
+}

@@ -1,0 +1,15 @@
+fn sign(x) = {
+  if x > 0 {
+    return "positive"
+  }
+  if x < 0 {
+    return "negative"
+  }
+  "zero"
+}
+
+fn main() = {
+  print(sign(5))
+  print(sign(-3))
+  print(sign(0))
+}

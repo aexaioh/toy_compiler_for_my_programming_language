@@ -1,0 +1,8 @@
+fn main() = {
+  let r = $(df -h /)?
+  let lines = r.stdout.split("\n").filter(s => s.len() > 0)
+  for line in lines.take(1) {
+    print(line)
+  }
+  Ok(())
+}

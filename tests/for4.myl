@@ -1,0 +1,7 @@
+fn main() = {
+  let xs = ["a", "b", "c"]
+  print(xs.first().or("none"))
+  print(xs.last().or("none"))
+  print(xs.get(1).or("none"))
+  print(xs.get(10).or("none"))
+}

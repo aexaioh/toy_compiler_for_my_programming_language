@@ -1,0 +1,7 @@
+// expect_compile_error
+fn main() = {
+  if true {
+    return ()
+  }
+  print("never reached")
+}

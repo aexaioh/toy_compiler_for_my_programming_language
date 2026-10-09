@@ -1,0 +1,8 @@
+fn main() = {
+  let xs = [1, 2, 3]
+  print(xs.contains(2))
+  print(xs.contains(5))
+  let names = ["alice", "bob"]
+  print(names.contains("alice"))
+  print(names.contains("charlie"))
+}

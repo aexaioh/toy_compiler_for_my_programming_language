@@ -1,0 +1,13 @@
+fn main() = {
+  let hosts = args()
+  print("checking {hosts.len()} hosts")
+  let r = $(uname -s)?
+  print("running on {r.stdout.trim()}")
+  for_test(hosts)
+  Ok(())
+}
+
+fn for_test(hosts) = {
+  let joined = hosts.join(", ")
+  print("hosts: {joined}")
+}

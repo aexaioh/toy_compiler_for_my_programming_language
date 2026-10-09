@@ -1,0 +1,13 @@
+fn ping(host) = {
+  let r = $(ping -c1 -W1 {host})
+  if r.status == 0 {
+    print("up")
+  } else {
+    print("down")
+  }
+}
+
+fn main() = {
+  ping("127.0.0.1")
+  ping("192.0.2.1")
+}

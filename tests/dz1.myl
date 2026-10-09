@@ -1,0 +1,5 @@
+fn main() = {
+  print("before")
+  print(10 / 0)
+  print("never reached")
+}

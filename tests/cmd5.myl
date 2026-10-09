@@ -1,0 +1,14 @@
+fn main() = {
+  let r = $(git status --short)
+  if r.status == 0 {
+    if r.stdout.trim().len() == 0 {
+      print("clean")
+    } else {
+      print("dirty:")
+      print(r.stdout)
+    }
+  } else {
+    print("not a git repo")
+    print(r.stderr)
+  }
+}
