@@ -1,0 +1,4 @@
+fn main() = {
+  let r = sh("exit 42")
+  print(r.status)
+}

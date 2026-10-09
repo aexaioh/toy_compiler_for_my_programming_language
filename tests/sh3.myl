@@ -1,0 +1,4 @@
+fn main() = {
+  let r = sh("ls *.myl 2>/dev/null | wc -l")
+  print(r.stdout.trim())
+}

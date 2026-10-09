@@ -1,0 +1,8 @@
+fn main() = {
+  let x = 100
+  while x < 10 {
+    print("never")
+    x = x + 1
+  }
+  print("done")
+}

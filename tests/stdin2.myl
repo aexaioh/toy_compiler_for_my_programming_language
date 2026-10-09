@@ -1,0 +1,5 @@
+fn main() = {
+  let data = "foo\nbar\nbaz\nfoobar\n"
+  let r = $(grep foo) << data
+  print(r.stdout.trim())
+}

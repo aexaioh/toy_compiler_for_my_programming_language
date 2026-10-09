@@ -1,0 +1,14 @@
+fn sum_to(n) = {
+  let i = 1
+  let total = 0
+  while i <= n {
+    total = total + i
+    i = i + 1
+  }
+  total
+}
+
+fn main() = {
+  print(sum_to(10))
+  print(sum_to(100))
+}

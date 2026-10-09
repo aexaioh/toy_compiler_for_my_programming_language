@@ -1,0 +1,4 @@
+fn main() = {
+  let r = sh("ls /etc | head -5")
+  print(r.stdout)
+}

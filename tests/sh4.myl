@@ -1,0 +1,5 @@
+fn main() = {
+  let r = sh("cat /nonexistent")?
+  print(r.stdout)
+  Ok(())
+}

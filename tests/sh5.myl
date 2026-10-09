@@ -1,0 +1,5 @@
+fn main() = {
+  let dir = "/tmp"
+  let r = sh("ls {dir} | head -3")
+  print(r.status)
+}

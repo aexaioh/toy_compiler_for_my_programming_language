@@ -1,0 +1,5 @@
+// expect_compile_error
+fn main() = {
+  let x = "abc"
+  let y = x << "def"
+}

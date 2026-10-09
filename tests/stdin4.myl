@@ -1,0 +1,5 @@
+fn main() = {
+  let name = "Alice"
+  let r = $(wc -c) << "hello {name}\n"
+  print(r.stdout.trim())
+}

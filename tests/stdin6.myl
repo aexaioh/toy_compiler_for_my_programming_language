@@ -1,0 +1,5 @@
+// expect_compile_error
+fn main() = {
+  let r = $(cat) << 42
+  print(r.stdout)
+}

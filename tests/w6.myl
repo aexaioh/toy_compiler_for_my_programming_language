@@ -1,0 +1,7 @@
+// expect_compile_error
+fn main() = {
+  let i = 0
+  while i {
+    i = i + 1
+  }
+}

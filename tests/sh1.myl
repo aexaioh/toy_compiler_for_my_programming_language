@@ -1,0 +1,4 @@
+fn main() = {
+  let r = sh("echo hello")
+  print(r.stdout.trim())
+}

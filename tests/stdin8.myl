@@ -1,0 +1,5 @@
+fn main() = {
+  let big = "x".repeat(500000)
+  let r = $(wc -c) << big
+  print(r.stdout.trim())
+}

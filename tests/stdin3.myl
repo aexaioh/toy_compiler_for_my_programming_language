@@ -1,0 +1,5 @@
+fn main() = {
+  let data = "one\ntwo\nthree\n"
+  let r = sh("sort -r") << data
+  print(r.stdout.trim())
+}
